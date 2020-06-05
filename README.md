@@ -18,4 +18,4 @@ This is a first iteration. With more time, the following features would be added
 * Integration test: it is directly testing the script, therefore it is particularly important to prove the right behavior of the app.
 
 ## Internal
-I chose to set up the project the same way I would have done in a real scenario. This means strong use of OOP, modules exposing public methods (shielding internal service classes), service objects, dependency injection. While this might seem too much, I think it's always good to setup projects in such a way that they can be easily reworked/maintained/expanded in the future: decoupling is the most important aspect to achieve this aim.
+I chose to set up the project the same way I would have done in a real scenario. This means *strong use of OOP, modules exposing public methods (shielding internal service classes), service objects, dependency injection.* While this might seem too much, I think it's always good to setup projects in such a way that they can be easily reworked/maintained/expanded in the future: decoupling is the most important aspect to achieve this aim.
