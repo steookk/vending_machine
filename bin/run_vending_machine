@@ -1,0 +1,14 @@
+#!/usr/bin/env ruby
+# frozen_string_literal: true
+
+require_relative '../lib/vending_machine'
+
+# ideally this hash would be placed in a configuration file
+DEFAULT_MACHINE_CONFIGURATION = {
+  '1' => ::VendingMachine::Models::Item::BountyOriginal.new,
+  '2' => ::VendingMachine::Models::Item::CocaCola.new,
+  '3' => ::VendingMachine::Models::Item::Mars.new,
+  '4' => ::VendingMachine::Models::Item::SpringWater.new
+}.freeze
+
+VendingMachine.run(output: $stdout, input: $stdin, configuration: DEFAULT_MACHINE_CONFIGURATION)
